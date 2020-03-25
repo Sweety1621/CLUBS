@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".pro"></activity>
+        <activity android:name=".bf" />
+        <activity android:name=".website" />
+        <activity android:name=".help" />
+        <activity android:name=".au" />
+        <activity android:name=".cal" />
+        <activity android:name=".sm" />
+        <activity android:name=".not" />
+        <activity android:name=".club" />
+        <activity android:name=".sch" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
