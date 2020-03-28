@@ -6,30 +6,30 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class PagerController extends FragmentPagerAdapter {
-    int tabCount;
-    public PagerController(@NonNull FragmentManager fm,int tabCount) {
+    public PagerController(@NonNull FragmentManager fm) {
         super(fm);
-        this.tabCount=tabCount;
     }
 
     @NonNull
     @Override
-    public Fragment getItem(int i) {
-        switch (i){
+    public Fragment getItem(int position) {
+        Fragment fragment = null;
+        switch(position){
             case 0:
-                return new Departmental();
+                fragment = new Departmental();
+                break;
             case 1:
-                return new Technical();
+                fragment = new Technical();
+                break;
             case 2:
-                return new Cultural();
-            default:
-                return null;
+                fragment = new Cultural();
+                break;
         }
-
+        return fragment;
     }
 
     @Override
     public int getCount() {
-        return tabCount;
+        return 3;
     }
 }
