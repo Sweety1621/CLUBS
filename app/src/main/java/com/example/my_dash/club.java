@@ -15,80 +15,32 @@ import com.google.android.material.tabs.TabLayout;
 
 
 public class club extends AppCompatActivity {
-    TextView deparmental, technical, cultural;
-    ViewPager viewPager;
-    PagerController pagerC;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club);
-        deparmental = (TextView) findViewById(R.id.dep);
-        technical = (TextView) findViewById(R.id.tech);
-        cultural = (TextView) findViewById(R.id.cul);
-        viewPager = (ViewPager) findViewById(R.id.fragment_container);
-        pagerC = new PagerController(getSupportFragmentManager());
-        viewPager.setAdapter(pagerC);
-        deparmental.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                viewPager.setCurrentItem(0);
-            }
-        });
-        technical.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                viewPager.setCurrentItem(1);
-            }
-        });
-        cultural.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                viewPager.setCurrentItem(2);
-            }
-        });
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-            }
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Clubs");
+        toolbar.setTitleTextColor(Color.WHITE);
 
-            @Override
-            public void onPageSelected(int position) {
-                onChangeTab(position);
-            }
+        ViewPager viewPager = (ViewPager)findViewById(R.id.viewpager);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-            @Override
-            public void onPageScrollStateChanged(int state) {
+        adapter.addFragment(new Departmental(),"Departmental");
+        adapter.addFragment(new Cultural(),"Cultural");
+        adapter.addFragment(new Technical(),"technical");
 
-            }
-        });
-    }
-    private void onChangeTab(int position) {
-        if(position==0){
-            deparmental.setTextSize(25);
-            deparmental.setTextColor(Color.RED);
-            technical.setTextSize(20);
-            technical.setTextColor(Color.BLUE);
-            cultural.setTextSize(20);
-            cultural.setTextColor(Color.BLUE);
-        }
-        if(position==1){
-            deparmental.setTextSize(20);
-            deparmental.setTextColor(Color.BLUE);
-            technical.setTextSize(25);
-            technical.setTextColor(Color.RED);
-            cultural.setTextSize(20);
-            cultural.setTextColor(Color.BLUE);
-        }
-        if(position==2){
-            deparmental.setTextSize(20);
-            deparmental.setTextColor(Color.BLUE);
-            technical.setTextSize(20);
-            technical.setTextColor(Color.BLUE);
-            cultural.setTextSize(25);
-            cultural.setTextColor(Color.RED);
-        }
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout)findViewById(R.id.tablayout);
+        tabLayout.setupWithViewPager(viewPager);
+
+
+
     }
 }
