@@ -1,4 +1,4 @@
-package models;
+package com.example.my_dash.models;
 
 import java.util.ArrayList;
 
@@ -13,11 +13,14 @@ public class DepClubs {
             {
                 "C-HELIX",
                      "Overview",
+                    "",
                     ""
             },
             {
                 "CSEC",
                     "  ",
+                    "",
+                    ""
             },
 
 

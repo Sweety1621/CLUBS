@@ -1,11 +1,10 @@
-package adapters;
+package com.example.my_dash.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -16,7 +15,7 @@ import com.example.my_dash.R;
 
 import java.util.ArrayList;
 
-import models.DClubs;
+import com.example.my_dash.models.DClubs;
 
 public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.GridViewHolder> {
     private Context context;

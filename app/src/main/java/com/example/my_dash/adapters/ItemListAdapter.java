@@ -1,4 +1,4 @@
-package adapters;
+package com.example.my_dash.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -17,7 +17,7 @@ import com.example.my_dash.R;
 
 import java.util.ArrayList;
 
-import models.DClubs;
+import com.example.my_dash.models.DClubs;
 
 public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ListViewHolder> {
     private Context context;
@@ -62,8 +62,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ListVi
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder {
-        TextView tvName, tvOverview;
-        ImageView imgList;
+        private TextView tvName, tvOverview;
+        private ImageView imgList;
         RelativeLayout relativeLayout;
 
         public ListViewHolder(@NonNull View itemView) {

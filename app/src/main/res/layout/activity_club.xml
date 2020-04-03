@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:id="@+id/toolbar"
-        android:background="#000000"/>
+        android:background="#aaaaaa"/>
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"

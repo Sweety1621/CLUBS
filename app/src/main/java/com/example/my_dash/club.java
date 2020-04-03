@@ -10,7 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.tabs.TabLayout;
 
-import activities.Departmental;
+import com.example.my_dash.activities.Departmental;
 
 
 public class club extends AppCompatActivity {

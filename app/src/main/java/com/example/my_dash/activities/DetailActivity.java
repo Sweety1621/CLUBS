@@ -1,4 +1,4 @@
-package activities;
+package com.example.my_dash.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.my_dash.R;
 
-import models.DClubs;
+import com.example.my_dash.models.DClubs;
 
 public class DetailActivity extends AppCompatActivity {
     public static final String EXTRA_DCLUBS = "extra_dclubs";

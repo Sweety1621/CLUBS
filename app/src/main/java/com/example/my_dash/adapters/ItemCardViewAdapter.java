@@ -1,4 +1,4 @@
-package adapters;
+package com.example.my_dash.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,8 +17,8 @@ import com.example.my_dash.R;
 
 import java.util.ArrayList;
 
-import activities.DetailActivity;
-import models.DClubs;
+import com.example.my_dash.activities.DetailActivity;
+import com.example.my_dash.models.DClubs;
 
 public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapter.CardViewHolder> {
     private Context context;
