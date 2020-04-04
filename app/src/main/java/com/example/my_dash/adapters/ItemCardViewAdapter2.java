@@ -14,28 +14,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.my_dash.R;
+import com.example.my_dash.activities.DetailActivity;
+import com.example.my_dash.models.CClubs;
+import com.example.my_dash.models.TClubs;
 
 import java.util.ArrayList;
 
-import com.example.my_dash.activities.DetailActivity;
-import com.example.my_dash.models.DClubs;
-
-public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapter.CardViewHolder> {
+public class ItemCardViewAdapter2 extends RecyclerView.Adapter<ItemCardViewAdapter2.CardViewHolder> {
     private Context context;
-    private ArrayList<DClubs> listDClubs;
+    private ArrayList<CClubs> listCClubs;
 
-    public ItemCardViewAdapter(Context context) {
+    public ItemCardViewAdapter2(Context context) {
         this.context = context;
     }
 
-    public ArrayList<DClubs> getListDClubs() {
-        return listDClubs;
+    public ArrayList< CClubs> getListCClubs() {
+        return listCClubs;
     }
 
-    public void setListDClubs(ArrayList<DClubs> listDClubs) {
-        this.listDClubs = listDClubs;
+    public void setListCClubs(ArrayList<CClubs> listCClubs) {
+        this.listCClubs = listCClubs;
     }
-
     @NonNull
     @Override
     public CardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -43,26 +42,25 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
         return new CardViewHolder(view);
     }
     @Override
-    public void onBindViewHolder(@NonNull CardViewHolder holder, final int position) {
-        holder.tvName.setText(getListDClubs().get(position).getName());
-        holder.tvDescription.setText(getListDClubs().get(position).getDescription());
-        Glide.with(context).load(getListDClubs().get(position).getPhoto()).into(holder.imgPhoto);
+    public void onBindViewHolder(@NonNull ItemCardViewAdapter2.CardViewHolder holder, final int position) {
+        holder.tvName.setText(getListCClubs().get(position).getName());
+        holder.tvDescription.setText(getListCClubs().get(position).getDescription());
+        Glide.with(context).load(getListCClubs().get(position).getPhoto()).into(holder.imgPhoto);
 
         // intent parcel able to detail
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent detailActivity = new Intent(context, DetailActivity.class);
-                detailActivity.putExtra(DetailActivity.EXTRA_DCLUBS, listDClubs.get(position));
+                detailActivity.putExtra(DetailActivity.EXTRA_DCLUBS, listCClubs.get(position));
                 context.startActivity(detailActivity);
             }
         });
     }
 
-
     @Override
     public int getItemCount() {
-        return getListDClubs().size();
+        return getListCClubs().size();
     }
 
     public class CardViewHolder extends RecyclerView.ViewHolder {

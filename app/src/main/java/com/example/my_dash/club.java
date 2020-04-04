@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.my_dash.activities.Cultural;
 import com.example.my_dash.activities.Technical;
 import com.google.android.material.tabs.TabLayout;
 
