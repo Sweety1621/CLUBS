@@ -44,49 +44,54 @@ public class DepClubs {
                     "",
             },
             {
-                    "DRAVYA",
+
+                "DRAVYA",
                     "Overview",
                     "https://scontent.fpat3-1.fna.fbcdn.net/v/t1.0-9/p960x960/43505697_1949289108483508_3893313009723899904_o.jpg?_nc_cat=104&_nc_sid=85a577&_nc_ohc=JpaiS3fVc_kAX-tiptb&_nc_ht=scontent.fpat3-1.fna&_nc_tp=6&oh=d3e8bf7ccdd430320ac4df0f10d301f8",
                     "",
                     "",
             },
             {
-                    "HERMETICA",
+
+                "HERMETICA",
                     "Overview",
                     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnith.ac.in%2Fwp-content%2Fuploads%2F2016%2F10%2Fal15.pdf&psig=AOvVaw2DUZeNeGEhUak9BOo62Isq&ust=1586028206928000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCl0Nb9zOgCFQAAAAAdAAAAABAD",
                     "",
                     "",
             },
             {
-                    "MEDextrous",
+
+                "MEDextrous",
                     "Overview",
                     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fmedextrous%2F&psig=AOvVaw1TPgHCCf5nov5yRphPnXwL&ust=1586027946810000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiu2tn8zOgCFQAAAAAdAAAAABAN",
                     "",
                     "",
             },
             {
-                    "META MORPH",
+
+                "META MORPH",
                     "Overview",
                     "",
                     "",
                     "",
             },
             {
-                    "OJAS",
+
+                "OJAS",
                     "Overview",
                     "",
                     "",
                     "",
             },
             {
-                    "SPEC",
+                "SPEC",
                     "Overview",
                     "",
                     "",
                     "",
             },
             {
-                    "VIBHAV",
+                "VIBHAV",
                     "Overview",
                     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fteamvibhavece%2F&psig=AOvVaw1TPgHCCf5nov5yRphPnXwL&ust=1586027946810000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiu2tn8zOgCFQAAAAAdAAAAABAI",
                     "",
