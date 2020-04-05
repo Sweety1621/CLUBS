@@ -6,11 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.my_dash.activities.Departmental">
+
     <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
         android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@android:color/darker_gray"/>
+        android:background="?attr/colorButtonNormal" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view2"

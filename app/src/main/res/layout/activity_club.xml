@@ -9,25 +9,26 @@
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
+        android:layout_height="50dp"
         android:id="@+id/toolbar"
-        android:background="#aaaaaa"/>
+        android:background="#000000"/>
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00bcd4"
-        android:id="@+id/tablayout"
-        app:tabMode="fixed"
+        android:layout_below="@+id/toolbar"
+        android:background="?attr/colorPrimaryDark"
         app:tabGravity="fill"
         app:tabIndicatorColor="#ff4500"
-        app:tabTextColor="#000000"
+        app:tabMode="fixed"
         app:tabSelectedTextColor="@android:color/white"
-        android:layout_below="@+id/toolbar"/>
+        app:tabTextColor="#000000" />
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/viewpager"
+        android:background="@drawable/gradient"
         android:layout_below="@+id/tablayout"/>
 
 </RelativeLayout>
