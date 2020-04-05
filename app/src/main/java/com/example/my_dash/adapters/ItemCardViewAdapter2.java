@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.my_dash.R;
 import com.example.my_dash.activities.DetailActivity;
+import com.example.my_dash.activities.DetailActivity2;
 import com.example.my_dash.models.CClubs;
 import com.example.my_dash.models.TClubs;
 
@@ -51,8 +52,8 @@ public class ItemCardViewAdapter2 extends RecyclerView.Adapter<ItemCardViewAdapt
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent detailActivity = new Intent(context, DetailActivity.class);
-                detailActivity.putExtra(DetailActivity.EXTRA_DCLUBS, listCClubs.get(position));
+                Intent detailActivity = new Intent(context, DetailActivity2.class);
+                detailActivity.putExtra(DetailActivity2.EXTRA_CCLUBS, listCClubs.get(position));
                 context.startActivity(detailActivity);
             }
         });
