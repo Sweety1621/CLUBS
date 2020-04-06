@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 public class CClubs implements Parcelable {
 
-    private String name,overview,photo,description;
+    private String name,photo,description;
 
     public CClubs() {
     }
@@ -26,13 +26,6 @@ public class CClubs implements Parcelable {
         this.description = description;
     }
 
-    public String getOverview() {
-        return overview;
-    }
-
-    public void setOverview(String overview) {
-        this.overview = overview;
-    }
 
     public String getName() {
         return name;
@@ -44,7 +37,6 @@ public class CClubs implements Parcelable {
 
     protected CClubs(Parcel in) {
         name = in.readString();
-        overview = in.readString();
         photo = in.readString();
         description = in.readString();
     }
@@ -69,7 +61,6 @@ public class CClubs implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
-        dest.writeString(overview);
         dest.writeString(photo);
         dest.writeString(description);
     }
