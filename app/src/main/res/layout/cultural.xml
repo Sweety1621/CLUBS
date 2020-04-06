@@ -5,13 +5,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.my_dash.activities.Departmental">
+    tools:context="com.example.my_dash.activities.Cultural">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="?attr/colorButtonNormal" />
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view2"

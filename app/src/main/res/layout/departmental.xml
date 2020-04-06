@@ -7,11 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.my_dash.activities.Departmental">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="?attr/colorButtonNormal" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

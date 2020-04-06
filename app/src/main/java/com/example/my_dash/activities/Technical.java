@@ -52,11 +52,7 @@ public class Technical extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         TextView textView = (TextView) getView().findViewById(R.id.text);
-        toolbar1 = getView().findViewById(R.id.toolbar1);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar1);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Back");
+
 
         recyclerView1 = getView().findViewById(R.id.recycler_view1);
         recyclerView1.setHasFixedSize(true);

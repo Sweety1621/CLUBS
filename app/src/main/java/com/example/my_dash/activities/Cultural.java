@@ -51,11 +51,7 @@ public class Cultural extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         TextView textView = (TextView) getView().findViewById(R.id.text);
-        toolbar2 = getView().findViewById(R.id.toolbar2);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar2);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Back");
+
 
         recyclerView2 = getView().findViewById(R.id.recycler_view2);
         recyclerView2.setHasFixedSize(true);
