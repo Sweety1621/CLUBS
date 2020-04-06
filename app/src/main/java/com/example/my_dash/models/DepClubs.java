@@ -6,26 +6,19 @@ public class DepClubs {
     public static String[][] data = new String[][] {
 
             {".EXE",
-                    "Professional as well as Personal growth.Achieve excellence in Teamwork.",
                     "https://scontent.fpat3-1.fna.fbcdn.net/v/t1.0-9/48376249_2181062101914579_6963114676649459712_n.jpg?_nc_cat=110&_nc_sid=dd9801&_nc_ohc=KCkSUvuuPaQAX-lthce&_nc_ht=scontent.fpat3-1.fna&oh=b9e2593d93c6c1d9803ac6b7e1f1e5e7&oe=5EAA2604",
-                    "Team .EXE,the departmental team representing the Computer Science and Engineering Department at the Annual Technical Extravaganza of NIT Hamirpur, Nimbus.Each year we strive to raise the bar for technical advancement and showcasing the best of Computer Science and Software Development for anyone to see. When it comes to projects, we take up projects that are helpful to the students and thus result in a smooth life for the students in the college; and we finish them using a corporate protocol of deadlines and online version control. Not only this, we organize many events on the actual three days of Nimbus, which are aimed to provide a fun-filled but still quite informative experience of what Computer Science has to offer. These events range from an online competitive coding competition to an offline debugging race, and a gaming competition too.",
-                    "dekhte h yrr.",
-                    "We made an app Paradox, available on Play store that has over 2000 downloads.The Online open elective portal made by team .Exe will be implemented in the college soon.",
+                    "Team .EXE,the departmental team representing the Computer Science and Engineering Department at the Annual Technical Extravaganza of NIT Hamirpur, Nimbus.Each year we strive to raise the bar for technical advancement and showcasing the best of Computer Science and Software Development for anyone to see. When it comes to projects, we take up projects that are helpful to the students and thus result in a smooth life for the students in the college; and we finish them using a corporate protocol of deadlines and online version control. Not only this, we organize many events on the actual three days of Nimbus, which are aimed to provide a fun-filled but still quite informative experience of what Computer Science has to offer. These events range from an online competitive coding competition to an offline debugging race, and a gaming competition too.We made an app Paradox, available on Play store that has over 2000 downloads.The Online open elective portal made by team .Exe will be implemented in the college soon."
                     },
             {
                 "C-HELIX",
-                     "",
                     "https://media-exp1.licdn.com/dms/image/C510BAQHwpsXdYSGNsA/company-logo_200_200/0?e=2159024400&v=beta&t=MyeYEXsgWb2D0C5mZ9ZElqv4PvN82YpQbx_G5zgXmIo",
-                    "Team C-Helix represents an insight view of Civil department that has been working in NIT Hamirpur from a long way.NIMBUS, The Techfest of our college allows students from various stream to show their technicality in every field of science. Basically, it’s a student body which explores their creativity and develops meaningful projects. Every year, we make new and innovative projects and show them in an exhibition. Also, we organize certain technical events in which students, as well as teachers, participate to engage their skills and practical knowledge. Educational Workshops and guest lectures are also conducted where students acquire software skills and develop their personality. But as we all know that a happy mind can work better and effective. So, at the end of the Fest, we along with other students take part in the fun event organized by us.    ",
-                    " ",
-                    "",
+                    "Team C-Helix represents an insight view of Civil department that has been working in NIT Hamirpur from a long way.NIMBUS, The Techfest of our college allows students from various stream to show their technicality in every field of science. Basically, it’s a student body which explores their creativity and develops meaningful projects. Every year, we make new and innovative projects and show them in an exhibition. Also, we organize certain technical events in which students, as well as teachers, participate to engage their skills and practical knowledge. Educational Workshops and guest lectures are also conducted where students acquire software skills and develop their personality. But as we all know that a happy mind can work better and effective. So, at the end of the Fest, we along with other students take part in the fun event organized by us.    "
+
             },
             {
                 "CSEC",
-                    "We at CSEC aim to kindle the love of coding in the hearts of everyone who are ready to work hard for it.",
                     "https://scontent.fpat1-1.fna.fbcdn.net/v/t1.0-9/10426619_1532988220289286_7506345474275112936_n.png?_nc_cat=106&_nc_sid=85a577&_nc_ohc=pN3Jek7Tks4AX_izaZM&_nc_ht=scontent.fpat1-1.fna&oh=d90e844c44fe180dce94a72882ea8848&oe=5EAE2279",
                     "Computer Science Engineers Community CSEC is the community of computer science enthusiasts of NITH, aimed at lending a helping hand to all the beginners in the world of programming.",
-                    " ",
                     "We at CSEC aim to kindle the love of coding in the hearts of everyone who are ready to work hard for it. Other events involve short and long challenges organized once in three months, a project development competition Winter of Codes during the winter vacations, a technical fest of CSEC ENIGMA and a yearly hackathon with its third iteration HACK 3.0 this year.We also organize interviews twice an year, for all 1st and 2nd-year students who wish to be a part of the team. If you wish to unravel the mysteries of programming and development, CSEC is the place for you.\n" +
                             "\n" +
                             "For the ones who want to start early we have a competitive programming guide suited for beginners : ",
@@ -149,7 +142,7 @@ public class DepClubs {
                             "Are you interested in gaining hands-on experience in electronics? If yes, Team Vibhav is the place for you. The departmental team of Electronics and Communication department, having won the Team of Excellence Award,2017",
                     "Knowledge is of no value unless you put it into practice. So come and try your hand on something that adds worth to you.",
                     "Develop your skills, be it technical or management skills. Vibhav offers you an opportunity to interact with fellow students and faculty. Boost your knowledge by making projects resolving practical problems. Learn along with an element of fun by conducting fun events. Workshops, projects, fun events and what not!",
-            },
+            }
 
 
 
@@ -162,9 +155,8 @@ public class DepClubs {
         for (String[] mData : data) {
             dClubs = new DClubs();
             dClubs.setName(mData[0]);
-            dClubs.setOverview(mData[1]);
-            dClubs.setPhoto(mData[2]);
-            dClubs.setDescription(mData[3]);
+            dClubs.setPhoto(mData[1]);
+            dClubs.setDescription(mData[2]);
 
 
             list.add(dClubs);

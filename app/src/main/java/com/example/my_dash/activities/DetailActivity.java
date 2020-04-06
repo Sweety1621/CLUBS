@@ -22,14 +22,14 @@ public class DetailActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.img_detail);
         TextView name = findViewById(R.id.tv_name_detail);
         TextView description = findViewById(R.id.tv_desc_detail);
-        TextView overview = findViewById(R.id.tv_overview_detail);
+
 
         DClubs mountain = getIntent().getParcelableExtra(EXTRA_DCLUBS);
 
         Glide.with(this).load(mountain.getPhoto()).into(imageView);
         name.setText(mountain.getName());
         description.setText(mountain.getDescription());
-        overview.setText(mountain.getOverview());
+
 
     }
 }
